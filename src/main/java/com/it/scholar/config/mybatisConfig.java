@@ -28,6 +28,6 @@ public class mybatisConfig {
     public MapperScannerConfigurer mapperScannerConfigurer (){
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setBasePackage("com.it.scholar.dao");
-        return null;
+        return mapperScannerConfigurer;
     }
 }

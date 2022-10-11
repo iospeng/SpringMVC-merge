@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SpringMVC-merge:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpringMVC_merge_war</output-path>
+    <root id="archive" name="SpringMVC-merge_war.war">
+      <element id="artifact" artifact-name="SpringMVC-merge:war exploded" />
+    </root>
+  </artifact>
+</component>
