@@ -21,4 +21,19 @@ public class ScoreServiceImpl implements ScoreService{
     public List<Score> selectAll() {
         return scoreDao.selectAll();
     }
+
+    @Override
+    public Boolean insertScore(Score score) {
+        return scoreDao.insertScore(score);
+    }
+
+    @Override
+    public Boolean upDateScore(Integer id, double languageScore) {
+        return scoreDao.upDateScore(id, languageScore);
+    }
+
+    @Override
+    public Boolean deleteScore(Integer id) {
+        return scoreDao.deleteScore(id);
+    }
 }

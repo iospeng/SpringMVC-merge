@@ -1,0 +1,24 @@
+GET http://localhost:8080/SpringMVC_merge_war/user/upDateScore?id=1&languageScore=11
+
+<> 2022-10-12T135122.404.html
+
+###
+
+GET http://localhost:8080/SpringMVC_merge_war/user/findById
+
+###
+
+GET http://localhost:8080/SpringMVC_merge_war/user/upDateScore
+
+<> 2022-10-12T135041.404.html
+
+###
+
+GET http://user/upDateScore
+
+###
+
+GET http://user/upDateScore}
+
+###
+
