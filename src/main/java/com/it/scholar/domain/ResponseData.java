@@ -1,5 +1,9 @@
 package com.it.scholar.domain;
 
+/*
+    响应数据类
+    所有请求最终响应该类型数据
+ */
 public class ResponseData {
     private int code;
     private Object data;

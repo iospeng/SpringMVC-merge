@@ -9,21 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b21782-1cf1-43ef-ad9c-96ccff1d00a7" name="Changes" comment="SpringMVC SSM整合 练习，增加事务">
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-10-12T135041.404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-10-12T135122.404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/domain/RequestResultsCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/domain/ResponseData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMVC_merge_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMVC_merge_war.xml" afterDir="false" />
+    <list default="true" id="23b21782-1cf1-43ef-ad9c-96ccff1d00a7" name="Changes" comment="SpringMVC SSM整合 练习，封装响应数据">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMVC_merge_war/SpringMVC-merge_war.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ScoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ScoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/dao/ScoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/dao/ScoreDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/service/ScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/service/ScoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/service/ScoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/service/ScoreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/domain/RequestResultsCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/domain/RequestResultsCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/domain/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/domain/ResponseData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +245,7 @@
       <updated>1665282623197</updated>
       <workItem from="1665282625298" duration="9461000" />
       <workItem from="1665452208998" duration="16036000" />
-      <workItem from="1665538986998" duration="13310000" />
+      <workItem from="1665538986998" duration="13596000" />
     </task>
     <task id="LOCAL-00001" summary="SpringMVC SSM整合">
       <created>1665300709861</created>
@@ -279,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665478685481</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SpringMVC SSM整合 练习，封装响应数据">
+      <created>1665559235467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665559235467</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +296,7 @@
     <MESSAGE value="SpringMVC SSM整合" />
     <MESSAGE value="SpringMVC SSM整合 后端代码完成" />
     <MESSAGE value="SpringMVC SSM整合 练习，增加事务" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC SSM整合 练习，增加事务" />
+    <MESSAGE value="SpringMVC SSM整合 练习，封装响应数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC SSM整合 练习，封装响应数据" />
   </component>
 </project>
