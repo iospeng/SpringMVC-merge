@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b21782-1cf1-43ef-ad9c-96ccff1d00a7" name="Changes" comment="SpringMVC SSM整合 练习，封装响应数据">
+    <list default="true" id="23b21782-1cf1-43ef-ad9c-96ccff1d00a7" name="Changes" comment="SpringMVC SSM整合 练习，添加响应数据封装备注">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ProjectExceptionAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/domain/RequestResultsCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/domain/RequestResultsCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/domain/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/domain/ResponseData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +244,8 @@
       <updated>1665282623197</updated>
       <workItem from="1665282625298" duration="9461000" />
       <workItem from="1665452208998" duration="16036000" />
-      <workItem from="1665538986998" duration="13596000" />
+      <workItem from="1665538986998" duration="17441000" />
+      <workItem from="1665983951406" duration="2857000" />
     </task>
     <task id="LOCAL-00001" summary="SpringMVC SSM整合">
       <created>1665300709861</created>
@@ -275,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665559235467</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SpringMVC SSM整合 练习，添加响应数据封装备注">
+      <created>1665559507028</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665559507028</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +304,7 @@
     <MESSAGE value="SpringMVC SSM整合 后端代码完成" />
     <MESSAGE value="SpringMVC SSM整合 练习，增加事务" />
     <MESSAGE value="SpringMVC SSM整合 练习，封装响应数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC SSM整合 练习，封装响应数据" />
+    <MESSAGE value="SpringMVC SSM整合 练习，添加响应数据封装备注" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC SSM整合 练习，添加响应数据封装备注" />
   </component>
 </project>
