@@ -1,6 +1,8 @@
 package com.it.scholar.controller;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.it.scholar.customException.BusinessException;
+import com.it.scholar.customException.SystemException;
 import com.it.scholar.domain.RequestResultsCode;
 import com.it.scholar.domain.ResponseData;
 import com.it.scholar.domain.Score;
@@ -32,6 +34,12 @@ public class ScoreController {
     @RequestMapping("/findById")
     @ResponseBody
     public ResponseData findById(Integer id){
+        if(id == 1){
+            throw new SystemException(500,"请求超时，请重试！");
+        }
+        if (id == 2){
+            throw new BusinessException(500,"id不存在");
+        }
         Score scorebyID = scoreService.findByID(id);
         Integer code = scorebyID != null ? REQUEST_OK : REQUEST_ERR;
         String msg = scorebyID != null ? "查询成功！" : "查询失败，请重试！";

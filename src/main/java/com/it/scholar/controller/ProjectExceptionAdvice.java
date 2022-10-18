@@ -1,5 +1,7 @@
 package com.it.scholar.controller;
 
+import com.it.scholar.customException.BusinessException;
+import com.it.scholar.customException.SystemException;
 import com.it.scholar.domain.ResponseData;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -16,7 +18,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
         2、格式：
             声明这个类是用来做异常处理的注解
                 @ControllerAdvice: 该类的方法方法返回json数据时，需要加
-                @ResponseBody注解
+                    @ResponseBody注解
                 @RestControllerAdvice: 该注解包含@ControllerAdvice，但该类的方法返
                     回json数据时，不需要加@ResponseBody注解
             告诉异常处理器，拦截的是哪一类异常使用的注解
@@ -27,6 +29,19 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @ControllerAdvice
 //@RestControllerAdvice
 public class ProjectExceptionAdvice {
+    //自定义系统异常
+    @ExceptionHandler(SystemException.class)
+    @ResponseBody
+    public ResponseData doSystemException(SystemException exception){
+        return new ResponseData(exception.getCode(),null,exception.getMessage());
+    }
+    //自定义用户操作不规范异常
+    @ExceptionHandler(BusinessException.class)
+    @ResponseBody
+    public ResponseData doBusinessException(BusinessException exception){
+        return new ResponseData(exception.getCode(),null,exception.getMessage());
+    }
+    //其他异常
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public ResponseData doException(Exception exception){

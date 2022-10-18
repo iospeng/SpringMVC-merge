@@ -9,9 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b21782-1cf1-43ef-ad9c-96ccff1d00a7" name="Changes" comment="SpringMVC SSM整合 练习，添加响应数据封装备注">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ProjectExceptionAdvice.java" afterDir="false" />
+    <list default="true" id="23b21782-1cf1-43ef-ad9c-96ccff1d00a7" name="Changes" comment="SpringMVC SSM整合 spring统一异常处理器">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/config/SpringMVCSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/interceptor/ProjectInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/customException/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/customException/SystemException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/config/SpringMVCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/config/SpringMVCConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ProjectExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ProjectExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ScoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ScoreController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,31 +58,34 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Download/workgit1/SpringMVC-merge/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;d33b2bd4a1256f14c1094c2e022ea68c&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/Download/git/Java_case",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "d33b2bd4a1256f14c1094c2e022ea68c"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Download\workgit1\SpringMVC-merge\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.it.scholar.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.it.scholar.customException" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.81">
@@ -245,7 +254,8 @@
       <workItem from="1665282625298" duration="9461000" />
       <workItem from="1665452208998" duration="16036000" />
       <workItem from="1665538986998" duration="17441000" />
-      <workItem from="1665983951406" duration="2857000" />
+      <workItem from="1665983951406" duration="3073000" />
+      <workItem from="1666063230510" duration="8485000" />
     </task>
     <task id="LOCAL-00001" summary="SpringMVC SSM整合">
       <created>1665300709861</created>
@@ -282,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665559507028</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="SpringMVC SSM整合 spring统一异常处理器">
+      <created>1665999312616</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665999312616</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +310,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="15" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="110" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="53" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -305,6 +330,7 @@
     <MESSAGE value="SpringMVC SSM整合 练习，增加事务" />
     <MESSAGE value="SpringMVC SSM整合 练习，封装响应数据" />
     <MESSAGE value="SpringMVC SSM整合 练习，添加响应数据封装备注" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC SSM整合 练习，添加响应数据封装备注" />
+    <MESSAGE value="SpringMVC SSM整合 spring统一异常处理器" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC SSM整合 spring统一异常处理器" />
   </component>
 </project>
