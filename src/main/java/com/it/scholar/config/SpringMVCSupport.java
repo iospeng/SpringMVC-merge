@@ -14,6 +14,7 @@ public class SpringMVCSupport extends WebMvcConfigurationSupport {
 
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(projectInterceptor).addPathPatterns("/findAll");
+        //指定拦截接口时，注意路径要写全，否则拦截不到，若需要拦截多个接口，可用逗号分割
+        registry.addInterceptor(projectInterceptor).addPathPatterns("/user/findAll");
     }
 }

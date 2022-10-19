@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 //@RestControllerAdvice
 public class ProjectExceptionAdvice {
     //自定义系统异常
-    @ExceptionHandler(SystemException.class)
+    @ExceptionHandler(SystemException.class) //告诉异常处理器，拦截的是哪一类异常使用的注解
     @ResponseBody
     public ResponseData doSystemException(SystemException exception){
         return new ResponseData(exception.getCode(),null,exception.getMessage());

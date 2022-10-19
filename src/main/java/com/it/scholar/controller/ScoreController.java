@@ -56,6 +56,16 @@ public class ScoreController {
         List<Score> scores = scoreService.selectAll();
         Integer code = scores != null ? REQUEST_OK : REQUEST_ERR;
         String msg = scores != null ? "查询成功！" : "查询失败，请重试！";
+
+        float s = 0;
+        int num = 10;
+        float i ;
+        for (i = 1; s < num; i++) {
+            s = s + 1/i;
+        }
+        System.out.println(i);
+        System.out.println("和为：" + s);
+
         return new ResponseData(code,scores,msg);
     }
 

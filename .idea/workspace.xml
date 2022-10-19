@@ -9,15 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b21782-1cf1-43ef-ad9c-96ccff1d00a7" name="Changes" comment="SpringMVC SSM整合 spring统一异常处理器">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/config/SpringMVCSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/interceptor/ProjectInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/customException/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/customException/SystemException.java" afterDir="false" />
+    <list default="true" id="23b21782-1cf1-43ef-ad9c-96ccff1d00a7" name="Changes" comment="SpringMVC SSM整合 springMVC 拦截器入门案例（未完成）">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/interceptor/ProjectInterceptor2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/config/SpringMVCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/config/SpringMVCConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/config/SpringMVCSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/config/SpringMVCSupport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ProjectExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ProjectExceptionAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ScoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/ScoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/interceptor/ProjectInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/scholar/controller/interceptor/ProjectInterceptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
@@ -81,10 +81,16 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Download\workgit1\SpringMVC-merge\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Download\workgit1\SpringMVC-merge\src\main\webapp" />
+      <recent name="E:\Download\workgit1\SpringMVC-merge\src\main" />
+      <recent name="E:\Download\workgit1\SpringMVC-merge\src\main\java" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.it.scholar.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.it.scholar.controller.interceptor" />
       <recent name="com.it.scholar.customException" />
     </key>
   </component>
@@ -152,6 +158,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="5c1c3ed2-c72a-4be8-ac3c-62d7c1f29ad7" />
+        <option name="JNDI_PORT" value="1199" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -255,7 +262,8 @@
       <workItem from="1665452208998" duration="16036000" />
       <workItem from="1665538986998" duration="17441000" />
       <workItem from="1665983951406" duration="3073000" />
-      <workItem from="1666063230510" duration="8485000" />
+      <workItem from="1666063230510" duration="8769000" />
+      <workItem from="1666143945373" duration="15543000" />
     </task>
     <task id="LOCAL-00001" summary="SpringMVC SSM整合">
       <created>1665300709861</created>
@@ -299,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665999312616</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="SpringMVC SSM整合 springMVC 拦截器入门案例（未完成）">
+      <created>1666085204279</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666085204279</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +346,7 @@
     <MESSAGE value="SpringMVC SSM整合 练习，封装响应数据" />
     <MESSAGE value="SpringMVC SSM整合 练习，添加响应数据封装备注" />
     <MESSAGE value="SpringMVC SSM整合 spring统一异常处理器" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC SSM整合 spring统一异常处理器" />
+    <MESSAGE value="SpringMVC SSM整合 springMVC 拦截器入门案例（未完成）" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC SSM整合 springMVC 拦截器入门案例（未完成）" />
   </component>
 </project>
